@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+body{
+    max-height: max-content;
+    padding: 60px;
+    padding-bottom: 0px;
+    background-color: #121212f7;
+}
+
+h1, h2, h3, h4{
+    color: white;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-decoration: underline;
+    text-decoration-color: rgb(154, 189, 240);
+    margin-top: 40px;
+    padding: 0px 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 40px;
+}
+
+input {
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgb(154, 189, 240);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 90%;
+}
+
+button {
+    font-size: 1.3rem;
+    border-radius: 0px 5px 5px 0px;
+    max-width:100%;
+    width: 5%;
+    border-style: hidden;
+    background-color: rgb(154, 189, 240);
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(130, 175, 242);
+}
+
+.stickersGrid {
+    height: 100vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    scrollbar-width: thin;
+    scrollbar-color: #9abdf0;
+}
+
+.stickersGrid::-webkit-scrollbar-track {
+    background: #9abdf0; /* Color del fondo */
+    border-radius: 10px;
+}
+
+.stickerItem {
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(138, 138, 138, 0.554);
+}
+
+.downloadButton{
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 5px;
+    max-width:100%;
+    width: 100%;
+    background-color: rgb(154, 189, 240);
+    color: white;
+}
+
+@media (max-width: 1200px) {
+
+
+    form{
+        padding: 0px;
+    }
+
+    input {
+        background-color: white;
+        border-radius: 5px ;
+        font-size: 1.2rem;
+        outline: none;
+        width: 100%;
+    }
+
+    button {
+      display: none;
+    }
+}
