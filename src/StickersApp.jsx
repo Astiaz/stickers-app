@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ImagesGrid } from "./ImagesGrid";
-import { InputSearch } from "./inputSearch";
+import { InputSearch } from "./InputSearch";
 
 export const StickersApp = () => {
 
